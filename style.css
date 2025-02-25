@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8faf4;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: white;
+}
+header .logo {
+    font-size: 25px;
+}
+header .menu a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    transition:  0.5s;
+}
+header .menu a:before {
+    position: absolute;
+    top: -2px;
+    contain: "";
+    width: 0px;
+    height: 2px;
+    background-color: azure;
+    transition: 0.5s;
+}
+header .menu a:hover::before {
+    width: 100%;
+}
+header .menu a:hover {
+    color: rgb(11, 11, 3);
+}
+/* home */
+
+.home {
+    height: calc(100vh - 55px);
+    background: url("Image/rolls-royce-phantom-blanche.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-bottom: 50px;
+    }
+.home-infos {
+    border-radius: 6px;
+    padding: 50px;
+}
+
+/* animation home-info */
+
+@keyframes anime {
+    from{
+        transform: translateX(-450px);
+    }
+}
+.home-info h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(219, 24, 219);
+}
+.home-info p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: hsla(192, 99%, 53%, 0.9);
+}
+
+.pa{
+    color: red;
+}
+.home-info a {
+    text-decoration: 0;
+    border: 2px solid #1fd1f5;
+    border-radius: 6px;
+    color: #1fd1f5;
+    border-radius: 6px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.home-info a:hover {
+    background-color: bisque;
+    color: #fff;
+    letter-spacing: 1px;
+}
+/* A propos */
+
+.Apropos .title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #34fcdb;
+}
+.Apropos .propos {
+    display: flex;
+    padding: 10px 10%;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    left: 400;
+    gap: 30px;
+}
+.home-info p {
+    color: black;
+}
+/* Voyage */
+
+.voyage .title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #34fcdb;
+}
+
+.voyage .home-info {
+    display: flex;
+    padding: 10px 10%;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    left: 400;
+    gap: 10px;
+}
+.image {
+    margin-top: 50px;;
+}
+
+/* Section Catalogue */
+.catalogue {
+    padding: 40px;
+    text-align: center;
+    color: #fc34b6;
+  }
+  
+  .catalogue h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .car-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .car-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .car-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  
+  .car-item p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* footer */
+footer{
+    padding: 0 15%;
+}
+
+footer .title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .class-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.contact h4 {
+    margin-bottom: 20px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact form input , textarea {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #999;
+    resize: none;
+    outline: 0;
+}
+.contact form button {
+   width: fit-content;
+   padding: 10px 25px;
+   background-color: #93d6d0;
+   border: 0;
+   font-weight: bold;
+   color: #000;
+   margin-top: 5px;
+}
+
+.addresse {
+    width: 50%;
+    height: 300px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.end {
+    margin-top: 50px;
+    background-color: #333;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+    color: #fff;
+}
